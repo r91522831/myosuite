@@ -17,6 +17,8 @@ task_spec = collections.namedtuple('task_spec',
 
 # MyoDM tasks
 MyoHand_task_spec = (
+    task_spec(name='MyoHandTHandleLift-v0', robot='MyoHand', object='t_handle', motion='MyoHand_thandle_lift.npz'),
+
 
     task_spec(name='MyoHandAirplaneFly-v0', robot='MyoHand', object='airplane', motion='MyoHand_airplane_fly1.npz'),
     task_spec(name='MyoHandAirplaneLift-v0', robot='MyoHand', object='airplane', motion='MyoHand_airplane_lift.npz'),
@@ -130,7 +132,7 @@ for task_name, robot_name, object_name, motion_path in MyoHand_task_spec:
     register_myohand_object_trackref(task_name, object_name, motion_path)
 
 
-OBJECTS = ('airplane','alarmclock','apple','banana','binoculars','bowl','camera','coffeemug','cubelarge','cubemedium','cubesmall','cup','cylinderlarge','cylindermedium','cylindersmall','duck','elephant','eyeglasses','flashlight','flute','gamecontroller','hammer','hand','headphones','knife','lightbulb','mouse','mug','phone','piggybank', 'pyramidlarge','pyramidmedium','pyramidsmall','scissors','spherelarge','spheremedium','spheresmall','stamp','stanfordbunny','stapler','teapot','toothbrush','toothpaste','toruslarge','torusmedium','torussmall','train','watch','waterbottle','wineglass')
+OBJECTS = ('t_handle','airplane','alarmclock','apple','banana','binoculars','bowl','camera','coffeemug','cubelarge','cubemedium','cubesmall','cup','cylinderlarge','cylindermedium','cylindersmall','duck','elephant','eyeglasses','flashlight','flute','gamecontroller','hammer','hand','headphones','knife','lightbulb','mouse','mug','phone','piggybank','pyramidlarge','pyramidmedium','pyramidsmall','scissors','spherelarge','spheremedium','spheresmall','stamp','stanfordbunny','stapler','teapot','toothbrush','toothpaste','toruslarge','torusmedium','torussmall','train','watch','waterbottle','wineglass')
 
 # Register object envs
 def register_MyoHand_object(object_name):
