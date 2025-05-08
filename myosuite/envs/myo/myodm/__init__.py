@@ -19,7 +19,6 @@ task_spec = collections.namedtuple('task_spec',
 MyoHand_task_spec = (
     task_spec(name='MyoHandTHandleLift-v0', robot='MyoHand', object='t_handle', motion='MyoHand_thandle_lift.npz'),
 
-
     task_spec(name='MyoHandAirplaneFly-v0', robot='MyoHand', object='airplane', motion='MyoHand_airplane_fly1.npz'),
     task_spec(name='MyoHandAirplaneLift-v0', robot='MyoHand', object='airplane', motion='MyoHand_airplane_lift.npz'),
     task_spec(name='MyoHandAirplanePass-v0', robot='MyoHand', object='airplane', motion='MyoHand_airplane_pass1.npz'),
