@@ -6,7 +6,7 @@
 	url = https://github.com/vikashplus/furniture_sim.git
 [submodule "myosuite/simhive/object_sim"]
 	path = myosuite/simhive/object_sim
-	url = https://github.com/vikashplus/object_sim.git
+	url = https://github.com/r91522831/object_sim.git
 [submodule "myosuite/simhive/MPL_sim"]
 	path = myosuite/simhive/MPL_sim
 	url = https://github.com/vikashplus/MPL_sim.git
